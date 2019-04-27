@@ -1,0 +1,1969 @@
+{
+  "contractName": "UICBuilding",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "totalBuildings",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x3ba5c722"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "building",
+      "outputs": [
+        {
+          "name": "buildingName",
+          "type": "string"
+        },
+        {
+          "name": "buildingNumber",
+          "type": "string"
+        },
+        {
+          "name": "buildingAddress",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x66ad3ffc"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor",
+      "signature": "constructor"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_buildingName",
+          "type": "string"
+        },
+        {
+          "name": "_buildingNumber",
+          "type": "string"
+        },
+        {
+          "name": "_buildingAddress",
+          "type": "string"
+        }
+      ],
+      "name": "addBuilding",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0x9f0d8253"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "getBuilindingAddress",
+      "outputs": [
+        {
+          "components": [
+            {
+              "name": "buildingName",
+              "type": "string"
+            },
+            {
+              "name": "buildingNumber",
+              "type": "string"
+            },
+            {
+              "name": "buildingAddress",
+              "type": "string"
+            }
+          ],
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x7b325b9c"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.0+commit.1d4f565a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"totalBuildings\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"building\",\"outputs\":[{\"name\":\"buildingName\",\"type\":\"string\"},{\"name\":\"buildingNumber\",\"type\":\"string\"},{\"name\":\"buildingAddress\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"getBuilindingAddress\",\"outputs\":[{\"components\":[{\"name\":\"buildingName\",\"type\":\"string\"},{\"name\":\"buildingNumber\",\"type\":\"string\"},{\"name\":\"buildingAddress\",\"type\":\"string\"}],\"name\":\"\",\"type\":\"tuple\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_buildingName\",\"type\":\"string\"},{\"name\":\"_buildingNumber\",\"type\":\"string\"},{\"name\":\"_buildingAddress\",\"type\":\"string\"}],\"name\":\"addBuilding\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/deexi/freshBlock/contracts/UICBuilding.sol\":\"UICBuilding\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/deexi/freshBlock/contracts/UICBuilding.sol\":{\"keccak256\":\"0x468660af020c1914b7dbedc3f422fbc6b6b11ca5ef0a2a3ed1eedeb82e86bb4a\",\"urls\":[\"bzzr://37e35e4f7606022c1669a93e7b56ccbda69de86c989813860dfdac6f544a32ce\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550610a62806100606000396000f3fe608060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633ba5c7221461006757806366ad3ffc146100925780637b325b9c146100d15780639f0d82531461010e575b600080fd5b34801561007357600080fd5b5061007c610137565b6040516100899190610942565b60405180910390f35b34801561009e57600080fd5b506100b960048036036100b49190810190610808565b61013d565b6040516100c8939291906108d4565b60405180910390f35b3480156100dd57600080fd5b506100f860048036036100f39190810190610808565b61032f565b6040516101059190610920565b60405180910390f35b34801561011a57600080fd5b5061013560048036036101309190810190610771565b610543565b005b60025481565b6001602052806000526040600020600091509050806000018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101e95780601f106101be576101008083540402835291602001916101e9565b820191906000526020600020905b8154815290600101906020018083116101cc57829003601f168201915b505050505090806001018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102875780601f1061025c57610100808354040283529160200191610287565b820191906000526020600020905b81548152906001019060200180831161026a57829003601f168201915b505050505090806002018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103255780601f106102fa57610100808354040283529160200191610325565b820191906000526020600020905b81548152906001019060200180831161030857829003601f168201915b5050505050905083565b610337610640565b6001600083815260200190815260200160002060606040519081016040529081600082018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103ef5780601f106103c4576101008083540402835291602001916103ef565b820191906000526020600020905b8154815290600101906020018083116103d257829003601f168201915b50505050508152602001600182018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156104915780601f1061046657610100808354040283529160200191610491565b820191906000526020600020905b81548152906001019060200180831161047457829003601f168201915b50505050508152602001600282018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156105335780601f1061050857610100808354040283529160200191610533565b820191906000526020600020905b81548152906001019060200180831161051657829003601f168201915b5050505050815250509050919050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561059e57600080fd5b6002600081548092919060010191905055506060604051908101604052808481526020018381526020018281525060016000600254815260200190815260200160002060008201518160000190805190602001906105fd929190610662565b50602082015181600101908051906020019061061a929190610662565b506040820151816002019080519060200190610637929190610662565b50905050505050565b6060604051908101604052806060815260200160608152602001606081525090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106106a357805160ff19168380011785556106d1565b828001600101855582156106d1579182015b828111156106d05782518255916020019190600101906106b5565b5b5090506106de91906106e2565b5090565b61070491905b808211156107005760008160009055506001016106e8565b5090565b90565b600082601f830112151561071a57600080fd5b813561072d6107288261098a565b61095d565b9150808252602083016020830185838301111561074957600080fd5b6107548382846109d5565b50505092915050565b600061076982356109cb565b905092915050565b60008060006060848603121561078657600080fd5b600084013567ffffffffffffffff8111156107a057600080fd5b6107ac86828701610707565b935050602084013567ffffffffffffffff8111156107c957600080fd5b6107d586828701610707565b925050604084013567ffffffffffffffff8111156107f257600080fd5b6107fe86828701610707565b9150509250925092565b60006020828403121561081a57600080fd5b60006108288482850161075d565b91505092915050565b600061083c826109b6565b8084526108508160208601602086016109e4565b61085981610a17565b602085010191505092915050565b600060608301600083015184820360008601526108848282610831565b9150506020830151848203602086015261089e8282610831565b915050604083015184820360408601526108b88282610831565b9150508091505092915050565b6108ce816109c1565b82525050565b600060608201905081810360008301526108ee8186610831565b905081810360208301526109028185610831565b905081810360408301526109168184610831565b9050949350505050565b6000602082019050818103600083015261093a8184610867565b905092915050565b600060208201905061095760008301846108c5565b92915050565b6000604051905081810181811067ffffffffffffffff8211171561098057600080fd5b8060405250919050565b600067ffffffffffffffff8211156109a157600080fd5b601f19601f8301169050602081019050919050565b600081519050919050565b6000819050919050565b6000819050919050565b82818337600083830152505050565b60005b83811015610a025780820151818401526020810190506109e7565b83811115610a11576000848401525b50505050565b6000601f19601f830116905091905056fea265627a7a723058200dbc0992b24030016af048f9328cc38a54a833b94d3be4f5177ff2d300642fbd6c6578706572696d656e74616cf50037",
+  "deployedBytecode": "0x608060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633ba5c7221461006757806366ad3ffc146100925780637b325b9c146100d15780639f0d82531461010e575b600080fd5b34801561007357600080fd5b5061007c610137565b6040516100899190610942565b60405180910390f35b34801561009e57600080fd5b506100b960048036036100b49190810190610808565b61013d565b6040516100c8939291906108d4565b60405180910390f35b3480156100dd57600080fd5b506100f860048036036100f39190810190610808565b61032f565b6040516101059190610920565b60405180910390f35b34801561011a57600080fd5b5061013560048036036101309190810190610771565b610543565b005b60025481565b6001602052806000526040600020600091509050806000018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101e95780601f106101be576101008083540402835291602001916101e9565b820191906000526020600020905b8154815290600101906020018083116101cc57829003601f168201915b505050505090806001018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102875780601f1061025c57610100808354040283529160200191610287565b820191906000526020600020905b81548152906001019060200180831161026a57829003601f168201915b505050505090806002018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103255780601f106102fa57610100808354040283529160200191610325565b820191906000526020600020905b81548152906001019060200180831161030857829003601f168201915b5050505050905083565b610337610640565b6001600083815260200190815260200160002060606040519081016040529081600082018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156103ef5780601f106103c4576101008083540402835291602001916103ef565b820191906000526020600020905b8154815290600101906020018083116103d257829003601f168201915b50505050508152602001600182018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156104915780601f1061046657610100808354040283529160200191610491565b820191906000526020600020905b81548152906001019060200180831161047457829003601f168201915b50505050508152602001600282018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156105335780601f1061050857610100808354040283529160200191610533565b820191906000526020600020905b81548152906001019060200180831161051657829003601f168201915b5050505050815250509050919050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561059e57600080fd5b6002600081548092919060010191905055506060604051908101604052808481526020018381526020018281525060016000600254815260200190815260200160002060008201518160000190805190602001906105fd929190610662565b50602082015181600101908051906020019061061a929190610662565b506040820151816002019080519060200190610637929190610662565b50905050505050565b6060604051908101604052806060815260200160608152602001606081525090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106106a357805160ff19168380011785556106d1565b828001600101855582156106d1579182015b828111156106d05782518255916020019190600101906106b5565b5b5090506106de91906106e2565b5090565b61070491905b808211156107005760008160009055506001016106e8565b5090565b90565b600082601f830112151561071a57600080fd5b813561072d6107288261098a565b61095d565b9150808252602083016020830185838301111561074957600080fd5b6107548382846109d5565b50505092915050565b600061076982356109cb565b905092915050565b60008060006060848603121561078657600080fd5b600084013567ffffffffffffffff8111156107a057600080fd5b6107ac86828701610707565b935050602084013567ffffffffffffffff8111156107c957600080fd5b6107d586828701610707565b925050604084013567ffffffffffffffff8111156107f257600080fd5b6107fe86828701610707565b9150509250925092565b60006020828403121561081a57600080fd5b60006108288482850161075d565b91505092915050565b600061083c826109b6565b8084526108508160208601602086016109e4565b61085981610a17565b602085010191505092915050565b600060608301600083015184820360008601526108848282610831565b9150506020830151848203602086015261089e8282610831565b915050604083015184820360408601526108b88282610831565b9150508091505092915050565b6108ce816109c1565b82525050565b600060608201905081810360008301526108ee8186610831565b905081810360208301526109028185610831565b905081810360408301526109168184610831565b9050949350505050565b6000602082019050818103600083015261093a8184610867565b905092915050565b600060208201905061095760008301846108c5565b92915050565b6000604051905081810181811067ffffffffffffffff8211171561098057600080fd5b8060405250919050565b600067ffffffffffffffff8211156109a157600080fd5b601f19601f8301169050602081019050919050565b600081519050919050565b6000819050919050565b6000819050919050565b82818337600083830152505050565b60005b83811015610a025780820151818401526020810190506109e7565b83811115610a11576000848401525b50505050565b6000601f19601f830116905091905056fea265627a7a723058200dbc0992b24030016af048f9328cc38a54a833b94d3be4f5177ff2d300642fbd6c6578706572696d656e74616cf50037",
+  "sourceMap": "69:812:1:-;;;426:60;8:9:-1;5:2;;;30:1;27;20:12;5:2;426:60:1;468:10;460:5;;:18;;;;;;;;;;;;;;;;;;69:812;;;;;;",
+  "deployedSourceMap": "69:812:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;172:26;;8:9:-1;5:2;;;30:1;27;20:12;5:2;172:26:1;;;;;;;;;;;;;;;;;;;;124:41;;8:9:-1;5:2;;;30:1;27;20:12;5:2;124:41:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;758:120;;8:9:-1;5:2;;;30:1;27;20:12;5:2;758:120:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;492:260;;8:9:-1;5:2;;;30:1;27;20:12;5:2;492:260:1;;;;;;;;;;;;;;;;;;;172:26;;;;:::o;124:41::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;758:120::-;821:15;;:::i;:::-;855:8;:15;864:5;855:15;;;;;;;;;;;848:22;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;758:120;;;:::o;492:260::-;264:5;;;;;;;;;;;250:19;;:10;:19;;;241:29;;;;;;;;632:14;;:16;;;;;;;;;;;;;686:58;;;;;;;;;695:13;686:58;;;;710:15;686:58;;;;727:16;686:58;;;659:8;:24;668:14;;659:24;;;;;;;;;;;:85;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;492:260;;;:::o;69:812::-;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;6:442:-1:-;;108:3;101:4;93:6;89:17;85:27;78:35;75:2;;;126:1;123;116:12;75:2;163:6;150:20;185:65;200:49;242:6;200:49;;;185:65;;;176:74;;270:6;263:5;256:21;306:4;298:6;294:17;339:4;332:5;328:16;374:3;365:6;360:3;356:16;353:25;350:2;;;391:1;388;381:12;350:2;401:41;435:6;430:3;425;401:41;;;68:380;;;;;;;;456:118;;523:46;561:6;548:20;523:46;;;514:55;;508:66;;;;;581:809;;;;749:2;737:9;728:7;724:23;720:32;717:2;;;765:1;762;755:12;717:2;828:1;817:9;813:17;800:31;851:18;843:6;840:30;837:2;;;883:1;880;873:12;837:2;903:63;958:7;949:6;938:9;934:22;903:63;;;893:73;;779:193;1031:2;1020:9;1016:18;1003:32;1055:18;1047:6;1044:30;1041:2;;;1087:1;1084;1077:12;1041:2;1107:63;1162:7;1153:6;1142:9;1138:22;1107:63;;;1097:73;;982:194;1235:2;1224:9;1220:18;1207:32;1259:18;1251:6;1248:30;1245:2;;;1291:1;1288;1281:12;1245:2;1311:63;1366:7;1357:6;1346:9;1342:22;1311:63;;;1301:73;;1186:194;711:679;;;;;;1397:241;;1501:2;1489:9;1480:7;1476:23;1472:32;1469:2;;;1517:1;1514;1507:12;1469:2;1552:1;1569:53;1614:7;1605:6;1594:9;1590:22;1569:53;;;1559:63;;1531:97;1463:175;;;;;1645:292;;1743:35;1772:5;1743:35;;;1795:6;1790:3;1783:19;1807:63;1863:6;1856:4;1851:3;1847:14;1840:4;1833:5;1829:16;1807:63;;;1902:29;1924:6;1902:29;;;1895:4;1890:3;1886:14;1882:50;1875:57;;1723:214;;;;;;2009:883;;2148:4;2143:3;2139:14;2242:3;2235:5;2231:15;2225:22;2291:3;2285:4;2281:14;2275:3;2270;2266:13;2259:37;2311:68;2374:4;2361:11;2311:68;;;2303:76;;2168:223;2477:4;2470:5;2466:16;2460:23;2528:3;2522:4;2518:14;2511:4;2506:3;2502:14;2495:38;2548:68;2611:4;2598:11;2548:68;;;2540:76;;2401:227;2715:4;2708:5;2704:16;2698:23;2766:3;2760:4;2756:14;2749:4;2744:3;2740:14;2733:38;2786:68;2849:4;2836:11;2786:68;;;2778:76;;2638:228;2883:4;2876:11;;2121:771;;;;;;2899:110;2972:31;2997:5;2972:31;;;2967:3;2960:44;2954:55;;;3016:635;;3228:2;3217:9;3213:18;3205:26;;3278:9;3272:4;3268:20;3264:1;3253:9;3249:17;3242:47;3303:64;3362:4;3353:6;3303:64;;;3295:72;;3415:9;3409:4;3405:20;3400:2;3389:9;3385:18;3378:48;3440:64;3499:4;3490:6;3440:64;;;3432:72;;3552:9;3546:4;3542:20;3537:2;3526:9;3522:18;3515:48;3577:64;3636:4;3627:6;3577:64;;;3569:72;;3199:452;;;;;;;3658:337;;3814:2;3803:9;3799:18;3791:26;;3864:9;3858:4;3854:20;3850:1;3839:9;3835:17;3828:47;3889:96;3980:4;3971:6;3889:96;;;3881:104;;3785:210;;;;;4002:193;;4110:2;4099:9;4095:18;4087:26;;4124:61;4182:1;4171:9;4167:17;4158:6;4124:61;;;4081:114;;;;;4202:256;;4264:2;4258:9;4248:19;;4302:4;4294:6;4290:17;4401:6;4389:10;4386:22;4365:18;4353:10;4350:34;4347:62;4344:2;;;4422:1;4419;4412:12;4344:2;4442:10;4438:2;4431:22;4242:216;;;;;4465:259;;4609:18;4601:6;4598:30;4595:2;;;4641:1;4638;4631:12;4595:2;4685:4;4681:9;4674:4;4666:6;4662:17;4658:33;4650:41;;4714:4;4708;4704:15;4696:23;;4532:192;;;;4731:88;;4808:5;4802:12;4792:22;;4786:33;;;;4826:79;;4895:5;4884:16;;4878:27;;;;4912:79;;4981:5;4970:16;;4964:27;;;;4999:145;5080:6;5075:3;5070;5057:30;5136:1;5127:6;5122:3;5118:16;5111:27;5050:94;;;;5153:268;5218:1;5225:101;5239:6;5236:1;5233:13;5225:101;;;5315:1;5310:3;5306:11;5300:18;5296:1;5291:3;5287:11;5280:39;5261:2;5258:1;5254:10;5249:15;;5225:101;;;5341:6;5338:1;5335:13;5332:2;;;5406:1;5397:6;5392:3;5388:16;5381:27;5332:2;5202:219;;;;;5429:97;;5517:2;5513:7;5508:2;5501:5;5497:14;5493:28;5483:38;;5477:49;;;",
+  "source": "pragma solidity >=0.4.22 <0.6.0;\r\npragma experimental ABIEncoderV2;\r\ncontract UICBuilding {\r\n    \r\n    address  owner;\r\n    mapping(uint => Building) public building;\r\n    uint public totalBuildings;\r\n    \r\n    modifier onlyOwner {\r\n        require (msg.sender == owner);\r\n        _;\r\n    }\r\n    struct Building{\r\n        string buildingName;\r\n        string buildingNumber;\r\n        string buildingAddress;\r\n    }\r\n    \r\n    constructor ()  public {\r\n        owner = msg.sender;\r\n    }\r\n    function addBuilding(string memory _buildingName, string memory _buildingNumber, string memory _buildingAddress) public onlyOwner{\r\n        totalBuildings++;\r\n        building[totalBuildings] = Building(_buildingName, _buildingNumber, _buildingAddress);\r\n    }\r\n    function getBuilindingAddress(uint index) view public returns (Building memory){\r\n        return building[index];\r\n    }\r\n}",
+  "sourcePath": "C:/Users/deexi/freshBlock/contracts/UICBuilding.sol",
+  "ast": {
+    "absolutePath": "/C/Users/deexi/freshBlock/contracts/UICBuilding.sol",
+    "exportedSymbols": {
+      "UICBuilding": [
+        132
+      ]
+    },
+    "id": 133,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:1"
+      },
+      {
+        "id": 59,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "34:33:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 132,
+        "linearizedBaseContracts": [
+          132
+        ],
+        "name": "UICBuilding",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 61,
+            "name": "owner",
+            "nodeType": "VariableDeclaration",
+            "scope": 132,
+            "src": "103:14:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 60,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "103:7:1",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 65,
+            "name": "building",
+            "nodeType": "VariableDeclaration",
+            "scope": 132,
+            "src": "124:41:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Building_$85_storage_$",
+              "typeString": "mapping(uint256 => struct UICBuilding.Building)"
+            },
+            "typeName": {
+              "id": 64,
+              "keyType": {
+                "id": 62,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "132:4:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "124:25:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Building_$85_storage_$",
+                "typeString": "mapping(uint256 => struct UICBuilding.Building)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 63,
+                "name": "Building",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 85,
+                "src": "140:8:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Building_$85_storage_ptr",
+                  "typeString": "struct UICBuilding.Building"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 67,
+            "name": "totalBuildings",
+            "nodeType": "VariableDeclaration",
+            "scope": 132,
+            "src": "172:26:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 66,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "172:4:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 77,
+              "nodeType": "Block",
+              "src": "230:60:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 73,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 70,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 147,
+                            "src": "250:3:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 71,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "250:10:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "id": 72,
+                          "name": "owner",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 61,
+                          "src": "264:5:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "250:19:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 69,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        150,
+                        151
+                      ],
+                      "referencedDeclaration": 150,
+                      "src": "241:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 74,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "241:29:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 75,
+                  "nodeType": "ExpressionStatement",
+                  "src": "241:29:1"
+                },
+                {
+                  "id": 76,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "281:1:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 78,
+            "name": "onlyOwner",
+            "nodeType": "ModifierDefinition",
+            "parameters": {
+              "id": 68,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "230:0:1"
+            },
+            "src": "211:79:1",
+            "visibility": "internal"
+          },
+          {
+            "canonicalName": "UICBuilding.Building",
+            "id": 85,
+            "members": [
+              {
+                "constant": false,
+                "id": 80,
+                "name": "buildingName",
+                "nodeType": "VariableDeclaration",
+                "scope": 85,
+                "src": "322:19:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 79,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "322:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 82,
+                "name": "buildingNumber",
+                "nodeType": "VariableDeclaration",
+                "scope": 85,
+                "src": "352:21:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 81,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "352:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 84,
+                "name": "buildingAddress",
+                "nodeType": "VariableDeclaration",
+                "scope": 85,
+                "src": "384:22:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 83,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "384:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Building",
+            "nodeType": "StructDefinition",
+            "scope": 132,
+            "src": "296:118:1",
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 93,
+              "nodeType": "Block",
+              "src": "449:37:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 91,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 88,
+                      "name": "owner",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 61,
+                      "src": "460:5:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 89,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 147,
+                        "src": "468:3:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 90,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "468:10:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      }
+                    },
+                    "src": "460:18:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 92,
+                  "nodeType": "ExpressionStatement",
+                  "src": "460:18:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 94,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 86,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "438:2:1"
+            },
+            "returnParameters": {
+              "id": 87,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "449:0:1"
+            },
+            "scope": 132,
+            "src": "426:60:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 118,
+              "nodeType": "Block",
+              "src": "621:131:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 106,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "632:16:1",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 105,
+                      "name": "totalBuildings",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 67,
+                      "src": "632:14:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 107,
+                  "nodeType": "ExpressionStatement",
+                  "src": "632:16:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 116,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 108,
+                        "name": "building",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 65,
+                        "src": "659:8:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Building_$85_storage_$",
+                          "typeString": "mapping(uint256 => struct UICBuilding.Building storage ref)"
+                        }
+                      },
+                      "id": 110,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 109,
+                        "name": "totalBuildings",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 67,
+                        "src": "668:14:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "659:24:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Building_$85_storage",
+                        "typeString": "struct UICBuilding.Building storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 112,
+                          "name": "_buildingName",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 96,
+                          "src": "695:13:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 113,
+                          "name": "_buildingNumber",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 98,
+                          "src": "710:15:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 114,
+                          "name": "_buildingAddress",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 100,
+                          "src": "727:16:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        ],
+                        "id": 111,
+                        "name": "Building",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 85,
+                        "src": "686:8:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_Building_$85_storage_ptr_$",
+                          "typeString": "type(struct UICBuilding.Building storage pointer)"
+                        }
+                      },
+                      "id": 115,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "686:58:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Building_$85_memory",
+                        "typeString": "struct UICBuilding.Building memory"
+                      }
+                    },
+                    "src": "659:85:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Building_$85_storage",
+                      "typeString": "struct UICBuilding.Building storage ref"
+                    }
+                  },
+                  "id": 117,
+                  "nodeType": "ExpressionStatement",
+                  "src": "659:85:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 119,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 103,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 102,
+                  "name": "onlyOwner",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 78,
+                  "src": "612:9:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "612:9:1"
+              }
+            ],
+            "name": "addBuilding",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 101,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 96,
+                  "name": "_buildingName",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 119,
+                  "src": "513:27:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 95,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "513:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 98,
+                  "name": "_buildingNumber",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 119,
+                  "src": "542:29:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 97,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "542:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 100,
+                  "name": "_buildingAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 119,
+                  "src": "573:30:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 99,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "573:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "512:92:1"
+            },
+            "returnParameters": {
+              "id": 104,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "621:0:1"
+            },
+            "scope": 132,
+            "src": "492:260:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 130,
+              "nodeType": "Block",
+              "src": "837:41:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 126,
+                      "name": "building",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 65,
+                      "src": "855:8:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Building_$85_storage_$",
+                        "typeString": "mapping(uint256 => struct UICBuilding.Building storage ref)"
+                      }
+                    },
+                    "id": 128,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 127,
+                      "name": "index",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 121,
+                      "src": "864:5:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "855:15:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Building_$85_storage",
+                      "typeString": "struct UICBuilding.Building storage ref"
+                    }
+                  },
+                  "functionReturnParameters": 125,
+                  "id": 129,
+                  "nodeType": "Return",
+                  "src": "848:22:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 131,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getBuilindingAddress",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 122,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 121,
+                  "name": "index",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 131,
+                  "src": "788:10:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 120,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "788:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "787:12:1"
+            },
+            "returnParameters": {
+              "id": 125,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 124,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 131,
+                  "src": "821:15:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Building_$85_memory_ptr",
+                    "typeString": "struct UICBuilding.Building"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 123,
+                    "name": "Building",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 85,
+                    "src": "821:8:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Building_$85_storage_ptr",
+                      "typeString": "struct UICBuilding.Building"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "820:17:1"
+            },
+            "scope": 132,
+            "src": "758:120:1",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 133,
+        "src": "69:812:1"
+      }
+    ],
+    "src": "0:881:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/deexi/freshBlock/contracts/UICBuilding.sol",
+    "exportedSymbols": {
+      "UICBuilding": [
+        132
+      ]
+    },
+    "id": 133,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:1"
+      },
+      {
+        "id": 59,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "34:33:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 132,
+        "linearizedBaseContracts": [
+          132
+        ],
+        "name": "UICBuilding",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 61,
+            "name": "owner",
+            "nodeType": "VariableDeclaration",
+            "scope": 132,
+            "src": "103:14:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 60,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "103:7:1",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 65,
+            "name": "building",
+            "nodeType": "VariableDeclaration",
+            "scope": 132,
+            "src": "124:41:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Building_$85_storage_$",
+              "typeString": "mapping(uint256 => struct UICBuilding.Building)"
+            },
+            "typeName": {
+              "id": 64,
+              "keyType": {
+                "id": 62,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "132:4:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "124:25:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Building_$85_storage_$",
+                "typeString": "mapping(uint256 => struct UICBuilding.Building)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 63,
+                "name": "Building",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 85,
+                "src": "140:8:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Building_$85_storage_ptr",
+                  "typeString": "struct UICBuilding.Building"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 67,
+            "name": "totalBuildings",
+            "nodeType": "VariableDeclaration",
+            "scope": 132,
+            "src": "172:26:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 66,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "172:4:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 77,
+              "nodeType": "Block",
+              "src": "230:60:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 73,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 70,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 147,
+                            "src": "250:3:1",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 71,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "250:10:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "id": 72,
+                          "name": "owner",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 61,
+                          "src": "264:5:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "250:19:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 69,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        150,
+                        151
+                      ],
+                      "referencedDeclaration": 150,
+                      "src": "241:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 74,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "241:29:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 75,
+                  "nodeType": "ExpressionStatement",
+                  "src": "241:29:1"
+                },
+                {
+                  "id": 76,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "281:1:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 78,
+            "name": "onlyOwner",
+            "nodeType": "ModifierDefinition",
+            "parameters": {
+              "id": 68,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "230:0:1"
+            },
+            "src": "211:79:1",
+            "visibility": "internal"
+          },
+          {
+            "canonicalName": "UICBuilding.Building",
+            "id": 85,
+            "members": [
+              {
+                "constant": false,
+                "id": 80,
+                "name": "buildingName",
+                "nodeType": "VariableDeclaration",
+                "scope": 85,
+                "src": "322:19:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 79,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "322:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 82,
+                "name": "buildingNumber",
+                "nodeType": "VariableDeclaration",
+                "scope": 85,
+                "src": "352:21:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 81,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "352:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 84,
+                "name": "buildingAddress",
+                "nodeType": "VariableDeclaration",
+                "scope": 85,
+                "src": "384:22:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 83,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "384:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Building",
+            "nodeType": "StructDefinition",
+            "scope": 132,
+            "src": "296:118:1",
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 93,
+              "nodeType": "Block",
+              "src": "449:37:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 91,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 88,
+                      "name": "owner",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 61,
+                      "src": "460:5:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 89,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 147,
+                        "src": "468:3:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 90,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "468:10:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      }
+                    },
+                    "src": "460:18:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 92,
+                  "nodeType": "ExpressionStatement",
+                  "src": "460:18:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 94,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 86,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "438:2:1"
+            },
+            "returnParameters": {
+              "id": 87,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "449:0:1"
+            },
+            "scope": 132,
+            "src": "426:60:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 118,
+              "nodeType": "Block",
+              "src": "621:131:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 106,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "632:16:1",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 105,
+                      "name": "totalBuildings",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 67,
+                      "src": "632:14:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 107,
+                  "nodeType": "ExpressionStatement",
+                  "src": "632:16:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 116,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 108,
+                        "name": "building",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 65,
+                        "src": "659:8:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Building_$85_storage_$",
+                          "typeString": "mapping(uint256 => struct UICBuilding.Building storage ref)"
+                        }
+                      },
+                      "id": 110,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 109,
+                        "name": "totalBuildings",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 67,
+                        "src": "668:14:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "659:24:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Building_$85_storage",
+                        "typeString": "struct UICBuilding.Building storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 112,
+                          "name": "_buildingName",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 96,
+                          "src": "695:13:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 113,
+                          "name": "_buildingNumber",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 98,
+                          "src": "710:15:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 114,
+                          "name": "_buildingAddress",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 100,
+                          "src": "727:16:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        ],
+                        "id": 111,
+                        "name": "Building",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 85,
+                        "src": "686:8:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_Building_$85_storage_ptr_$",
+                          "typeString": "type(struct UICBuilding.Building storage pointer)"
+                        }
+                      },
+                      "id": 115,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "686:58:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Building_$85_memory",
+                        "typeString": "struct UICBuilding.Building memory"
+                      }
+                    },
+                    "src": "659:85:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Building_$85_storage",
+                      "typeString": "struct UICBuilding.Building storage ref"
+                    }
+                  },
+                  "id": 117,
+                  "nodeType": "ExpressionStatement",
+                  "src": "659:85:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 119,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 103,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 102,
+                  "name": "onlyOwner",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 78,
+                  "src": "612:9:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "612:9:1"
+              }
+            ],
+            "name": "addBuilding",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 101,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 96,
+                  "name": "_buildingName",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 119,
+                  "src": "513:27:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 95,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "513:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 98,
+                  "name": "_buildingNumber",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 119,
+                  "src": "542:29:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 97,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "542:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 100,
+                  "name": "_buildingAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 119,
+                  "src": "573:30:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 99,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "573:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "512:92:1"
+            },
+            "returnParameters": {
+              "id": 104,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "621:0:1"
+            },
+            "scope": 132,
+            "src": "492:260:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 130,
+              "nodeType": "Block",
+              "src": "837:41:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 126,
+                      "name": "building",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 65,
+                      "src": "855:8:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Building_$85_storage_$",
+                        "typeString": "mapping(uint256 => struct UICBuilding.Building storage ref)"
+                      }
+                    },
+                    "id": 128,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 127,
+                      "name": "index",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 121,
+                      "src": "864:5:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "855:15:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Building_$85_storage",
+                      "typeString": "struct UICBuilding.Building storage ref"
+                    }
+                  },
+                  "functionReturnParameters": 125,
+                  "id": 129,
+                  "nodeType": "Return",
+                  "src": "848:22:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 131,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getBuilindingAddress",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 122,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 121,
+                  "name": "index",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 131,
+                  "src": "788:10:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 120,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "788:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "787:12:1"
+            },
+            "returnParameters": {
+              "id": 125,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 124,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 131,
+                  "src": "821:15:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Building_$85_memory_ptr",
+                    "typeString": "struct UICBuilding.Building"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 123,
+                    "name": "Building",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 85,
+                    "src": "821:8:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Building_$85_storage_ptr",
+                      "typeString": "struct UICBuilding.Building"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "820:17:1"
+            },
+            "scope": 132,
+            "src": "758:120:1",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 133,
+        "src": "69:812:1"
+      }
+    ],
+    "src": "0:881:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+  },
+  "networks": {
+    "42": {
+      "events": {},
+      "links": {},
+      "address": "0xFc4832460612465c82d6c53C8D88aB5669Fb6439",
+      "transactionHash": "0x1acf43601e4ebbaf6535438c7fd818a436d4171753451f9fe5fec38efc41dff7"
+    },
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xaa3C3978C262011A8DB0a74f6c92aa2176F0D15C",
+      "transactionHash": "0xf8c3d92f57c01375187fe085b3e8ce119f6bbfba1e685b104923305d001f0e58"
+    }
+  },
+  "schemaVersion": "3.0.8",
+  "updatedAt": "2019-04-26T04:39:15.776Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
